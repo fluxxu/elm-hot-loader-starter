@@ -1,9 +1,12 @@
 # Elm Hot Loader Starter Kit
 
 ## Requirements
-* Elm 0.17+
+* Elm 0.18+
 * elm-webpack-loader 3.0.0+
-* elm-hot-loader 0.3.0+
+* elm-hot-loader 0.5.0+
+
+For Elm 0.17, please use this commit:
+https://github.com/fluxxu/elm-hot-loader-starter/tree/01ed97bbbacd44c94e8434b1b1d86d91354c10d2
 
 ## Setup
 ```shell
