@@ -13,7 +13,7 @@
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.8",
     "copy-webpack-plugin": "^1.1.1",
-    
+    "elm-hot-loader": "^0.5.1",
     "elm-webpack-loader": "^3.0.6",
     "file-loader": "^0.8.5",
     "style-loader": "^0.13.0",
