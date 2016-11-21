@@ -1,7 +1,6 @@
 port module Main exposing (..)
 
-import Html exposing (div, button, text, h2, input, ul, li)
-import Html.App exposing (programWithFlags)
+import Html exposing (programWithFlags, div, button, text, h2, input, ul, li)
 import Html.Events exposing (onClick, onInput)
 import Html.Attributes exposing (..)
 import Time
@@ -11,7 +10,7 @@ type alias Flags = {
   swapCount : Int
 }
 
-main : Program Flags
+main : Program Flags Model Msg
 main =
   programWithFlags
     { init = init
@@ -104,7 +103,7 @@ view model =
         ]
     , div [ style boxStyle ]
         [ h2 [] [ text "Outgoing Port" ]
-        , input [ type' "text", value model.alertText, onInput ChangeAlertText ] []
+        , input [ type_ "text", value model.alertText, onInput ChangeAlertText ] []
         , button [ onClick Alert ] [ text "call alert" ]
         ]
     , div [ style boxStyle ]
