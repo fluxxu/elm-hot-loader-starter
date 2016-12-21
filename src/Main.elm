@@ -4,6 +4,7 @@ import Html exposing (programWithFlags, div, button, text, h2, input, ul, li)
 import Html.Events exposing (onClick, onInput)
 import Html.Attributes exposing (..)
 import Time
+import View
 
 
 type alias Flags = {
@@ -91,6 +92,8 @@ view model =
   div []
     [ div [ style boxStyle ]
         [ text <| "This app has been hot-swapped " ++ (toString model.swapCount) ++ " times." ]
+    , div [ style boxStyle ]
+        [ View.view ]
     , div [ style boxStyle ]
         [ h2 [] [ text "Counter" ]
         , button [ onClick Decrement ] [ text "-" ]
